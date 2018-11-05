@@ -256,7 +256,7 @@ class WritingFlow extends Component {
 
 				// After pressing primary + A we can assume isEntirelySelected is true.
 				// Calling right away isEntirelySelected after primary + A may still return false on some browsers.
-				this.isEntirelySelected = true;
+                this.isEntirelySelected = isEntirelySelected( target );
 			}
 
 			return;
