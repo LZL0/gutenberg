@@ -30,7 +30,7 @@ export function PostPublishPanelToggle( {
 			disabled={ ! isButtonEnabled }
 			isBusy={ isSaving && isPublished }
 		>
-			{ isBeingScheduled ? __( 'Schedule…' ) : __( 'Publish…' ) }
+			{ isBeingScheduled ? __( 'Schedule…' ) : __( 'Submit Post…' ) }
 			<DotTip tipId="core/editor.publish">
 				{ __( 'Finished writing? That’s great, let’s get this published right now. Just click “Publish” and you’re good to go.' ) }
 			</DotTip>

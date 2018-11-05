@@ -27,7 +27,7 @@ export function PublishButtonLabel( {
 	}
 
 	if ( ! hasPublishAction ) {
-		return __( 'Submit for Review' );
+		return __( 'Submit Post' );
 	} else if ( isPublished ) {
 		return __( 'Update' );
 	} else if ( isBeingScheduled ) {

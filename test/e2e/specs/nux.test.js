@@ -40,7 +40,7 @@ describe( 'New User Experience (NUX)', () => {
 
 	it( 'should show tips to a first-time user', async () => {
 		const firstTipText = await page.$eval( '.nux-dot-tip', ( element ) => element.innerText );
-		expect( firstTipText ).toContain( 'Welcome to the wonderful world of blocks!' );
+		expect( firstTipText ).toContain( 'Welcome to the new editor!' );
 
 		const [ nextTipButton ] = await page.$x( "//button[contains(text(), 'See next tip')]" );
 		await nextTipButton.click();

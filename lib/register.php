@@ -152,14 +152,6 @@ function gutenberg_collect_meta_box_data() {
 	}
 	$stati[] = 'private';
 
-	if ( in_array( get_post_status( $post ), $stati ) ) {
-		// If the post type support comments, or the post has comments, allow the
-		// Comments meta box.
-		if ( comments_open( $post ) || pings_open( $post ) || $post->comment_count > 0 || post_type_supports( $post_type, 'comments' ) ) {
-			add_meta_box( 'commentsdiv', __( 'Comments', 'gutenberg' ), 'post_comment_meta_box', $screen, 'normal', 'core' );
-		}
-	}
-
 	if ( ! ( 'pending' == get_post_status( $post ) && ! current_user_can( $post_type_object->cap->publish_posts ) ) ) {
 		add_meta_box( 'slugdiv', __( 'Slug', 'gutenberg' ), 'post_slug_meta_box', $screen, 'normal', 'core' );
 	}

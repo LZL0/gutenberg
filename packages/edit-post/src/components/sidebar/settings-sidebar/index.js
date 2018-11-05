@@ -34,8 +34,6 @@ const SettingsSidebar = ( { sidebarName } ) => (
 					<LastRevision />
 					<PostTaxonomies />
 					<FeaturedImage />
-					<PostExcerpt />
-					<DiscussionPanel />
 					<PageAttributes />
 					<MetaBoxes location="side" />
 				</Fragment>

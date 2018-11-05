@@ -174,9 +174,6 @@
 	}
 
 	// selection style for multiple blocks
-	&.is-multi-selected *::selection {
-		background-color: transparent;
-	}
 
 	&.is-multi-selected .editor-block-list__block-edit::before {
 		background: $blue-medium-highlight;

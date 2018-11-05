@@ -17,10 +17,8 @@ import * as image from './image';
 import * as heading from './heading';
 import * as quote from './quote';
 import * as gallery from './gallery';
-import * as archives from './archives';
 import * as audio from './audio';
 import * as button from './button';
-import * as categories from './categories';
 import * as code from './code';
 import * as columns from './columns';
 import * as column from './columns/column';
@@ -29,17 +27,13 @@ import * as embed from './embed';
 import * as file from './file';
 import * as html from './html';
 import * as mediaText from './media-text';
-import * as latestComments from './latest-comments';
-import * as latestPosts from './latest-posts';
 import * as list from './list';
 import * as missing from './missing';
 import * as more from './more';
 import * as nextpage from './nextpage';
 import * as preformatted from './preformatted';
 import * as pullquote from './pullquote';
-import * as reusableBlock from './block';
 import * as separator from './separator';
-import * as shortcode from './shortcode';
 import * as spacer from './spacer';
 import * as subhead from './subhead';
 import * as table from './table';
@@ -62,11 +56,8 @@ export const registerCoreBlocks = () => {
 		quote,
 
 		// Register all remaining core blocks.
-		shortcode,
-		archives,
 		audio,
 		button,
-		categories,
 		code,
 		columns,
 		column,
@@ -78,15 +69,12 @@ export const registerCoreBlocks = () => {
 		window.wp && window.wp.oldEditor ? classic : null, // Only add the classic block in WP Context
 		html,
 		mediaText,
-		latestComments,
-		latestPosts,
 		missing,
 		more,
 		nextpage,
 		preformatted,
 		pullquote,
 		separator,
-		reusableBlock,
 		spacer,
 		subhead,
 		table,
