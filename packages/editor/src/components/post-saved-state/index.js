@@ -98,17 +98,15 @@ export class PostSavedState extends Component {
 		}
 
 		const label = isPending ? __( 'Save as Pending' ) : __( 'Save Draft' );
-		if ( ! isLargeViewport ) {
-			return (
-				<IconButton
-					className="editor-post-save-draft"
-					label={ label }
-					onClick={ onSave }
-					shortcut={ displayShortcut.primary( 's' ) }
-					icon="cloud-upload"
-				/>
-			);
-		}
+		return (
+			<IconButton
+				className="editor-post-save-draft"
+				label={ label }
+				onClick={ onSave }
+				shortcut={ displayShortcut.primary( 's' ) }
+				icon="cloud-upload"
+			/>
+		);
 
 		return (
 			<Button

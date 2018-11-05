@@ -85,7 +85,7 @@ function gutenberg_menu() {
 		);
 	}
 }
-add_action( 'admin_menu', 'gutenberg_menu' );
+//add_action( 'admin_menu', 'gutenberg_menu' );
 
 /**
  * Checks whether we're currently loading a Gutenberg page
@@ -146,7 +146,7 @@ function gutenberg_build_files_notice() {
  * @since 1.5.0
  */
 function gutenberg_pre_init() {
-	if ( defined( 'GUTENBERG_DEVELOPMENT_MODE' ) && GUTENBERG_DEVELOPMENT_MODE && ! file_exists( dirname( __FILE__ ) . '/build/blocks' ) ) {
+	/*if ( defined( 'GUTENBERG_DEVELOPMENT_MODE' ) && GUTENBERG_DEVELOPMENT_MODE && ! file_exists( dirname( __FILE__ ) . '/build/blocks' ) ) {
 		add_action( 'admin_notices', 'gutenberg_build_files_notice' );
 		return;
 	}
@@ -160,7 +160,7 @@ function gutenberg_pre_init() {
 	if ( version_compare( $version, '4.9.8', '<' ) ) {
 		add_action( 'admin_notices', 'gutenberg_wordpress_version_notice' );
 		return;
-	}
+	}*/
 
 	require_once dirname( __FILE__ ) . '/lib/load.php';
 
@@ -484,7 +484,7 @@ function gutenberg_replace_default_add_new_button() {
 	</script>
 	<?php
 }
-add_action( 'admin_print_scripts-edit.php', 'gutenberg_replace_default_add_new_button' );
+//add_action( 'admin_print_scripts-edit.php', 'gutenberg_replace_default_add_new_button' );
 
 /**
  * Adds the block-editor-page class to the body tag on the Gutenberg page.

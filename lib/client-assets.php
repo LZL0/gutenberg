@@ -1295,18 +1295,8 @@ function gutenberg_get_block_categories( $post ) {
 			'icon'  => null,
 		),
 		array(
-			'slug'  => 'widgets',
-			'title' => __( 'Widgets', 'gutenberg' ),
-			'icon'  => null,
-		),
-		array(
 			'slug'  => 'embed',
 			'title' => __( 'Embeds', 'gutenberg' ),
-			'icon'  => null,
-		),
-		array(
-			'slug'  => 'reusable',
-			'title' => __( 'Reusable Blocks', 'gutenberg' ),
 			'icon'  => null,
 		),
 	);
